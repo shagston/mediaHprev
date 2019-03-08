@@ -74,6 +74,8 @@ fetch(upcomingUrl)
       //fill in the elements
       newMovieTitle.innerHTML = res[i].title;
 
+      newMovieInfo.innerHTML = res[i].overview;
+
       newMovieImg.src = "https://image.tmdb.org/t/p/w200" + res[i].poster_path;
 
       //append children to parent
