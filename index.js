@@ -167,4 +167,3 @@ fetch(popUrl)
   });
 
 
-  const infoPlayer = "https://iframe.video/api/v2/movies?imdb=" + res[i].imdb + "&api_token=" + apiToken"
