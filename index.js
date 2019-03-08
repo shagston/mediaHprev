@@ -69,7 +69,7 @@ fetch(upcomingUrl)
       newReleaseMovie.className = "movie";
       newMovieTitle.className = "movie-title";
       newMovieImg.className = "movie-img";
-      newMovieInfo.ClassName = "movie-info";
+      newMovieInfo.className = "movie-info";
 
       //fill in the elements
       newMovieTitle.innerHTML = res[i].title;
