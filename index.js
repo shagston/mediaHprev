@@ -63,7 +63,7 @@ fetch(upcomingUrl)
       let newReleaseMovie = document.createElement("div");
       let newMovieTitle = document.createElement("h5");
       let newMovieImg = document.createElement("img");
-      let newMovieInfo = document.createElement("div");
+      let newMovieInfo = document.createElement("p");
 
       //Give elements a class name
       newReleaseMovie.className = "movie";
