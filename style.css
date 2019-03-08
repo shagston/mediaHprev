@@ -5,7 +5,7 @@ body {
   overflow-x: hidden;
 }
 .h9 {
-  font-size: 12px;
+  font-size: 10pt;
   font-family: Lato;
   font-weight: 100;
 }
@@ -168,7 +168,7 @@ body {
   justify-content: flex-start;
 }
 
-.wrapper #categories .info {
+.wrapper #categories .movie-info {
   margin-right: 10px;
   margin-top: 14px;
   display: none;
