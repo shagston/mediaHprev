@@ -2,7 +2,9 @@ const siteBanner = document.getElementById("site-banner");
 const newReleaseContent = document.getElementById("new-release-content");
 const topRatedContent = document.getElementById("top-rated-content");
 const popularContent = document.getElementById("popular-content");
+const movieInfo = document.getElementById("info");
 const apiKey = "b6b3aaa39e9b8519d35c42addbdba973";
+const apiToken = "6de283b0d2895accbd93b3c86b5a11bc";
 const keyword = "captain marvel";
 
 const url =
@@ -43,6 +45,8 @@ fetch(url)
     console.log(err);
   });
 
+
+
 const upcomingUrl =
   "https://api.themoviedb.org/3/movie/upcoming?api_key=" +
   apiKey +
@@ -59,11 +63,13 @@ fetch(upcomingUrl)
       let newReleaseMovie = document.createElement("div");
       let newMovieTitle = document.createElement("h5");
       let newMovieImg = document.createElement("img");
+      let newMovieInfo = document.createElement("p");
 
       //Give elements a class name
       newReleaseMovie.className = "movie";
       newMovieTitle.className = "movie-title";
       newMovieImg.className = "movie-img";
+      newMovieInfo.ClassName = "movie-info";
 
       //fill in the elements
       newMovieTitle.innerHTML = res[i].title;
@@ -73,6 +79,7 @@ fetch(upcomingUrl)
       //append children to parent
       newReleaseMovie.appendChild(newMovieImg);
       newReleaseMovie.appendChild(newMovieTitle);
+      newReleaseMovie.appendChild(newMovieInfo);
       newReleaseContent.appendChild(newReleaseMovie);
     }
   })
@@ -156,3 +163,6 @@ fetch(popUrl)
   .catch(err => {
     console.log(err);
   });
+
+
+  const infoPlayer = "https://iframe.video/api/v2/movies?imdb=" + res[i].imdb + "&api_token=" + apiToken"
