@@ -5,7 +5,7 @@ const popularContent = document.getElementById("popular-content");
 const movieInfo = document.getElementById("info");
 const apiKey = "b6b3aaa39e9b8519d35c42addbdba973";
 const apiToken = "6de283b0d2895accbd93b3c86b5a11bc";
-const keyword = "captain marvel";
+const keyword = "Avengers: Endgame";
 
 const url =
   "https://api.themoviedb.org/3/search/movie?api_key=" +
