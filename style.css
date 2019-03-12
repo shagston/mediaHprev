@@ -85,7 +85,7 @@ body {
 .wrapper #site-banner .main-movie-title {
   top: 120px;
   left: 20px;
-  background: -webkit-linear-gradient(#ff0, #ff0000);
+  background: -webkit-linear-gradient(#ffe1ff, #160319);
   -webkit-filter: drop-shadow(0 0 5px #000);
           filter: drop-shadow(0 0 5px #000);
   -webkit-background-clip: text;
